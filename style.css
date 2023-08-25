@@ -1,0 +1,14 @@
+body{
+    margin: 50px;
+    padding: 20px;
+    border: 10px solid red;
+   
+}
+.container{
+    background-color: aqua;
+    font-size: x-large;
+    font-weight: bold;
+    font-style: italic;
+    color: blueviolet;
+
+}

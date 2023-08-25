@@ -1,0 +1,76 @@
+Element = > tag + content
+attributes = > class, id , style,etc..
+DOM:-Document Object Model
+=> Used to create and manipulate HTML elements dynamically
+step 1:- creating an html element
+for this we will use document.createElement(HTMLTag)
+this is an inbuilt function which takes elementname as parameter.
+syntax:-
+var/let/const variablename = document.createElement("elementname")
+example :-
+<div></div>
+step 2:- adding content
+syntax:- variablename.innerHTML="content"
+example:-
+step 3:- appending the elements to the body of the document.
+document.body.append(variablename)
+--------
+creating two elements and appending dynamically
+
+//session task 2
+
+<div>
+<header>
+<section> 
+<span> this is span </span>
+</section>
+<article>
+<p> this is paragraph</p>
+</article>
+</header>
+<header>
+<section> 
+<span> this is span </span>
+</section>
+<article>
+<p> this is paragraph</p>
+</article>
+</header>
+<div>
+-----------------------------------
+innerHTML vs innerText
+=> there is an alternative for innerHTML
+that is innerText.
+=>both of them are used to create content.
+=>innerHTML will parse the tag inside it.
+ele.innerHTML="<p>this is p tag</p>"
+=> innerText will not parse the tag inside it.
+ele.innerText="this is p tag"
+
+-------------------------------------
+attributes
+=> To give attributes in dom we will use
+setAttribute method which has two parameters
+1.attribute name
+2.attribute value
+example:-
+
+//session task
+<div> bg dark
+<header> bg lightcolors
+<section> bg  aqua
+<span> this is span </span> color blueviolet
+</section>
+<article> bg red
+<p> this is paragraph</p> black
+</article>
+</header>
+<header>bg lightcolors
+<section> bg red
+<span> this is span </span> black
+</section>
+<article> bg aqua
+<p> this is paragraph</p> blueviolet
+</article>
+</header>
+<div>
